@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="dark-overlay"></div>
+        <div id="header">
+            <a href="home.html" id="logo">
+                <img src="LogoCQ2.png" alt="Car Quiz Logo">
+            </a>
+            <div id="links">
+                <a href="explain.html">Explain</a>
+            </div>
+        </div>
+        <div class="difficulty-container">
+            <a class="start-quiz-button" href="quiz.html" id="noob" style="--color:#3d17d9;">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                NOOB
+            </a>
+            <a class="start-quiz-button" href="quiz.html" id="profi" style="--color:#3d17d9;">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                PROFI
+            </a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('noob').addEventListener('click', () => {
+            localStorage.setItem('difficulty', 'NOOB');
+            window.location.href = 'quiz.html'; // Redirect to the quiz page
+        });
+
+        document.getElementById('profi').addEventListener('click', () => {
+            localStorage.setItem('difficulty', 'PROFI');
+            window.location.href = 'quiz.html'; // Redirect to the quiz page
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Quiz - Instructions</title>
+</head>
+<body>
+    <div id="headerTop">
+        <a href="home.html" id="logo">
+            <img src="LogoCQ2.png" alt="Car Quiz Logo">
+        </a>
+        <div id="links">
+            <a href="explain.html">Explain</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Car Quiz</h1>
+        </header>
+        <main>
+            <section class="rules">
+                <h3>How to Play:</h3>
+                <ol>
+                    <li>Click on the "Start the Quiz" button to begin the game.</li>
+                    <li>You'll be presented with a series of multiple-choice questions related to cars, Formula 1, car brands and many other.</li>
+                    <li>Read each question carefully and select the answer you believe is correct.</li>
+                    <li>After selecting an answer, you'll receive immediate feedback on whether it was correct or incorrect.</li>
+                    <li>At the end of the quiz, your final score will be displayed.</li>
+                </ol>
+            </section>
+            <section class="tips">
+                <h3>Tips:</h3>
+                <ul>
+                    <li>Take your time and read each question carefully.</li>
+                    <li>If you're unsure of an answer, make an educated guess.</li>
+                    <li>Learn from your mistakes by reviewing the feedback provided for incorrect answers.</li>
+                    <li>Enjoy the quiz and have fun!</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <a href="pre-quiz.html" class="start-button">Start the Quiz</a>
+        </footer>
+    </div>
+</body>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #0c0b12;
+    margin-top: 35px;
+    padding-top: 35px;
+}
+
+#headerTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+#links {
+    display: flex;
+}
+
+#links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 600px;
+    padding-top: 2rem;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url('CarImage.jpeg');
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1{
+    color:aliceblue;
+}
+
+
+h2, h3 {
+    color: #333;
+}
+
+main {
+    padding-bottom: 10px;
+}
+
+.rules, .tips {
+    background-color: rgba(208, 211, 249, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+}
+
+ol, ul {
+    padding-left: 20px;
+}
+
+.start-button {
+    display: inline-block; /* Change to inline-block to fit content */
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(38, 130, 192, 0.7);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 25px;
+}
+
+.start-button:hover {
+    background-color: #2980b9;
+}
+
+
+footer {
+    text-align: center;
+}
+
+
+</style>
+</html>
